@@ -12,7 +12,7 @@ func main() {
 	n := flag.Bool("n", false, "Number the output lines starting at 1")
 	flag.Parse()
 	filePaths := flag.Args()
-	lineNums := 1
+	lineNum := 1
 
 	for _, filePath := range filePaths {
 		func() {
@@ -26,11 +26,11 @@ func main() {
 			for sc.Scan() {
 				text := sc.Text()
 				if *n {
-					fmt.Printf("%d: %s\n", lineNums, text)
+					fmt.Printf("%d: %s\n", lineNum, text)
 				} else {
 					fmt.Println(text)
 				}
-				lineNums++
+				lineNum++
 			}
 		}()
 	}
