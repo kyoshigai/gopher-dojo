@@ -18,7 +18,7 @@ func TestIsEven(t *testing.T) {
 		input    int
 		expected bool
 	}{
-		{"Positive Odd", 3, false},
+		{"Positive Odd", 1, false},
 		{"Positive Even", 2, true},
 		{"Zero", 0, true},
 		{"Negative Odd", -1, false},
