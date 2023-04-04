@@ -1,4 +1,4 @@
-module github.com/k-yoshigai/gopher-dojo
+module github.com/kyoshigai/gopher-dojo
 
 go 1.18
 
